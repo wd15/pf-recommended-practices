@@ -40,8 +40,9 @@ to the main branch.
 
 ## Contributors
 
-We welcome and recognize all contributions. You can see a list of current
-contributors in the [contributors tab][gh-cont].
+We welcome and recognize all contributions. Please see the
+[contribution guide](./CONTRIBUTING.md) for details. You can see a
+list of current contributors in the [contributors tab][gh-cont].
 
 ## Credits
 
