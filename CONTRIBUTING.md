@@ -59,7 +59,7 @@ walkthrough).
    guidelines).
 1. Click on the edit button at the top right corner of the file. You
    may be prompted to first fork the repository if this is your first
-   edit.  ![Fork Repository](./fork-repository-ss.png)
+   edit.  ![Fork Repository](./assets/fork-repository-ss.png)
 1. Make necessary changes and click on the green "Commit Changes"
    button.
 1. Add any comments (optional), and proceed to create a "Pull Request".
