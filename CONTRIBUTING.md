@@ -66,11 +66,11 @@ walkthrough).
 
 The changes you propose will not take effect immediately. The request
 will be approved by the admins of the website, after which the changes
-will take effect.
+will take effect. 
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/56v_kr1kKrY/0.jpg)](https://www.youtube.com/watch?v=56v_kr1kKrY)
+Click on the following image to go to a YouTube video describing the above steps.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/56v_kr1kKrY?si=gd9BjzVr3OnAJifj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![YouTube Link](https://img.youtube.com/vi/56v_kr1kKrY/0.jpg)](https://www.youtube.com/watch?v=56v_kr1kKrY)
 
 ## Get started with a local working copy
 
