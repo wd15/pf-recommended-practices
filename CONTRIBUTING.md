@@ -74,8 +74,8 @@ Click on the following image to go to a YouTube video describing the above steps
 
 ## Get started with a local working copy
 
-Ready to contribute? Here's how to set up `Phase Field Method
-Recommended Practices` for local development.
+Ready to contribute? Here's how to set up "Phase Field Method
+Recommended Practices" for local development.
 
 1. Fork the repo on GitHub.
 2. Clone your fork locally.
