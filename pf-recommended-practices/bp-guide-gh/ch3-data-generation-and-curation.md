@@ -4,13 +4,12 @@ Authors:
 
 - [Trevor Keller](https://www.nist.gov/people/trevor-keller), NIST, [@tkphd]
 - [Daniel Wheeler](https://www.nist.gov/people/daniel-wheeler), NIST, [@wd15]
-- [Damien Pinto](https://ca.linkedin.com/in/damien-pinto-4748387b), McGill, [@DamienPinto]
 
 ## Overview
 
 Phase-field models are characterized by a form of PDE related to an Eulerian
 free boundary problem and defined by a diffuse interface. Phase-field models
-for practical applications require sufficient high fidelity to resolve both the
+nfor practical applications require sufficient high fidelity to resolve both the
 macro length scale related to the application and the micro length scales
 associated with the free boundary. Performing a useful phase-field simulation
 requires extensive computational resources and can generate large volumes of
@@ -394,6 +393,87 @@ tools as part of your research will greatly benefit this process.
 
 ### Metadata Standards
 
+Using a comprehensive and accessible metadata standard is a
+fundamental step in generating FAIR data objects. In phase field and
+meso-scale modeling in general many authors fail to publish their data
+with their publications and even in the cases when they do publish
+their data they fail to include sufficient metadata for other
+researchers to build upon their work. One major roadblock to
+submitting FAIR data objects is the lack of a standard and tools for
+generating metadata files to include with the raw and processed data
+and/or workflow files. In light of this a MaRDA working group is
+currently developing a standard for phase field metadata based on the
+Workflow Run RO-Crate standard {cite}`Leo2024`. This will likely be
+published in early 2026 and aims to provide a metadata standard for
+phase field data and possibly other meso-scale modeling techniques. In
+the meantime (until the standard is published), we recommend following
+some of the examples available in the
+[`marda-alliance/phase-field-schema` repository][schema-repo] based on
+RO-Crate when publishing phase field data. Alternatively, an ad-hoc
+approach to metadata can be used, which might take the form of a YAML
+or JSON file withwhereby a narrative or YAML file with various fields
+and links is utilized. Regardless of the approach to generating the
+metadata to accompany the raw data the following main areas should be
+considered
+
+- Problem specification
+- Computational execution and environment
+- Numerical solution
+- Dataset details
+- Administrative / descriptive metadata
+
+Many of these details can be considered in the context of prospective
+versus retrospective metdata. Generally, much of the metadata is known
+before the simulation is undertaken. This would be most of the
+administrative details, problem specification, computational
+environment and numerical solution. However, the output data is, of
+course, retrospective in nature as well as quantities of interest
+about the simulation such as the memory usage or wall clock time.
+
+#### Problem Specification Metadata
+
+The problem specification is often the most overlooked, but also the
+most important required metadata description. It might include a brief
+description of the governing equations being solved as well as the
+context for the study (e.g. materials application) and links to
+existing publications. Additionally, descriptions of material
+properties, free energy functionals as well as a description of the
+field variables might be included.
+
+#### Computational Execution Metadata
+
+The computational execution includes details about the computational
+platform and/or container that is often persistent across many
+simulations. Metadata fields for the HPC environment, parallel setup
+and underlying software stack might also be included. Furthermore,
+less persistent data such as input files, environment variables and
+parameters can also included as part of the execution metadata.
+
+#### Numerical Solution
+
+This section includes details pertaining to the numerical solution
+such as the meshing strategy, spatial and temporal discretization
+schemes. Furthermore description of linear and non-linear solvers
+should be included as well as any preconditioning techniques
+
+#### Dataset Details
+
+Many of the dataset metadata fields are quite standard such as the
+file names and locations and other details about the files such as
+file size and formatting. Much of the metadata provided in the other
+sections help users to understand the output data, but there are more
+details that are useful. This might take the form of a data
+dictionary which starts to map out some of the details within the file
+such as column names and type in table data. Many file types such as
+XXX contain metadata as part of the file, which is very useful. For
+field data it might require explaining the connection between the
+physical domain described by a mesh and the location and/or meaning of
+the filed data across the domain.
+
+
+#### Administrative and 
+
+
 ### Licensing
 
 ### Selecting a data repository
@@ -427,3 +507,4 @@ Dockstore and Workflowhub https://arxiv.org/pdf/2410.03490
 [working-with-data]: https://aaltoscicomp.github.io/python-for-scicomp/work-with-data/#binary-file-formats
 [xarray-io]: https://docs.xarray.dev/en/stable/user-guide/io.html
 [snakemake-directory]: https://snakemake.readthedocs.io/en/stable/snakefiles/deployment.html
+[schema-repo]: https://github.com/marda-alliance/phase-field-schema/
